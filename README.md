@@ -21,6 +21,10 @@ Re-running analysis never requires re-fetching from S3. Adding a provider mappin
 
 ---
 
+## Dataset
+
+The dataset used for this research can be found [here](https://zenodo.org/records/20933099).
+
 ## Setup
 
 ```bash
