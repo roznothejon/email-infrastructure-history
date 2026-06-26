@@ -207,9 +207,3 @@ Each bucket accumulates small daily delta files; periodic compaction merges them
 See `preprocessing/PIPELINE.md` for the full storage design, crash safety model, and memory budget breakdown.
 
 ---
-
-## Notes
-
-- Live DNS lookups are intentionally absent. All analysis is on recorded snapshots; resolving `include:` directives against current DNS would invalidate historical accuracy.
-- Scope is MX and SPF only (DMARC/DKIM out of scope per proposal).
-- The event store under `data/` is not in the Docker image — mount it as a volume.
