@@ -1,0 +1,36 @@
+# Environment / secrets
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+
+# Virtual environment
+venv/
+
+# Data (large — stored separately, uploaded to Zenodo)
+data/toplists/
+data/zonefiles/
+data/stats/
+
+# Keep mappings (hand-curated, small)
+!data/mappings/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# DuckDB temp files
+*.wal
+*.tmp

@@ -1,0 +1,12 @@
+.git
+venv
+data
+dbs
+misc
+results
+tmp
+report-*.txt
+research proposal final.pdf
+*.pyc
+__pycache__
+.env
