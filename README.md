@@ -2,6 +2,8 @@
 
 University of Twente research project (TScIT 45). Transforms OpenINTEL's daily DNS snapshots into a per-domain, event-based dataset for tracking email infrastructure changes over time. Covers MX records (provider mapping) and SPF records (sender authorization + security posture).
 
+The full paper can be found [here](https://essay.utwente.nl/#/110822).
+
 **Three independent layers:**
 
 ```
@@ -11,13 +13,6 @@ OpenINTEL S3  →  Event store (Parquet)  →  Streamlit explorer app
 
 Re-running analysis never requires re-fetching from S3. Adding a provider mapping never requires reprocessing events.
 
----
-
-## Requirements
-
-- Python 3.12+
-- OpenINTEL S3 credentials (for ingest and historical analysis scripts)
-- ~96 GB RAM for zone-file scale ingest; top-list scale runs on ~16 GB
 
 ---
 
